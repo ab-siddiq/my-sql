@@ -11,20 +11,30 @@
 * [Insert row](#insert-row)
 
 ## Create Database
- `CREATE DATABASE "databaseName";`
-
+`CREATE DATABASE "databaseName";`
+```mySQL
+CREATE DATABASE employees;
+```
 ## Make database default
 `USE "databaseName";`
-
+```mySQL
+USE employees;
+```
 ## Drop database
 `DROP DATABASE "databaseName";`
-
+```mySQL
+DROP DATABASE employees;
+```
 ## Make database read only
 `ALTER DATABASE "databaseName" READ ONLY = 1;`
-
+```mySQL
+ALTER DATABASE employees READ ONLY = 1;
+```
 NOTE: id the mode is readonly we can not drop the database. In order to drop the database we need to change the readonly mode by
 `ALTER DATABASE "databaseName" READ ONLY = 0;`
-
+```mySQL
+ALTER DATABASE employees READ ONLY = 0;
+```
 ## Create table
 Example  `CREATE TABLE "tableName" (column name comma separeted)`
 ```mySQL
@@ -73,6 +83,9 @@ WHERE hourly_pay IS NOT NULL;
 [Go Top](#my-sql)
 ## Rename table
 `RENAME TABLE "name of the table" TO "new name of the table";`
+```mySQL
+RENAME TABLE employees TO workers;
+```
 ## Alter table
 To add new column 
 ```mySQL
