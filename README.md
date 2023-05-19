@@ -1,15 +1,20 @@
 # Table of contents
+* [Create database](#create-database)
+* [Make database default](#make-database-default)
+* [Drop database](#drop-database)
+* [Make database read only](#read-only)
 * [Create table](#create-table)
+
 ## Create Database
  `CREATE DATABASE "databaseName";`
 
-## Make Database Default
+## Make database default
 `USE "databaseName";`
 
-## Drop Database
+## Drop database
 `DROP DATABASE "databaseName";`
 
-## Make Database Readonly
+## Make database read only
 `ALTER DATABASE "databaseName" READ ONLY = 1;`
 
 NOTE: id the mode is readonly we can not drop the database. In order to drop the database we need to change the readonly mode by
