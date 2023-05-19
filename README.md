@@ -38,7 +38,37 @@ CREATE TABLE employees(
 //Here "hourly_pay DECIMAL(5,2)" 5,2 is the number of decimal digits with 2 decimal point.  for example - 123.23
 ```
 ## Select table
+To get all the column
 `SELECT * FROM "tableName";`
+```mySQL
+SELECT * FROM employees;
+```
+To get 1 or n column
+`SELECT column name comma separated FROM "tableName";`
+```mySQL
+SELECT employee_id, first_name, last_name FROM employees;
+```
+To get specific column with matching data
+```mySQL
+SELECT * FROM employees
+WHERE hourly_pay = 200.00;
+```
+```mySQL
+SELECT * FROM employees
+WHERE hourly_pay >= 200.00;
+```
+```mySQL
+SELECT * FROM employees
+WHERE hourly_pay != 200.00;
+```
+```mySQL
+SELECT * FROM employees
+WHERE hourly_pay IS NULL;
+```
+```mySQL
+SELECT * FROM employees
+WHERE hourly_pay IS NOT NULL;
+```
 <br><br>
 [Go Top](#my-sql)
 ## Rename table
