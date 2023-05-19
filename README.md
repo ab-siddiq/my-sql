@@ -41,15 +41,26 @@ CREATE TABLE employees(
 <br><br>
 [Go Top](#my-sql)
 ## Rename table
-`RENAME TABLE "name of the table" TO "new name of the table";
+`RENAME TABLE "name of the table" TO "new name of the table";`
 ## Alter table
-To add new column we need to write `ALTER TABLE "table name" and then ADD "column name and its data type"
+To add new column we need to write `ALTER TABLE "table name" and then ADD "column name and its data type"`
 ```mySQL
 ALTER TABLE employees
 ADD phone_number VARCHAR(15);
 ```
-To rename column we need to write `ALTER TABLE "table name" and then RENAME COLUMN "column name" TO "new name"
+To rename column we need to write `ALTER TABLE "table name" and then RENAME COLUMN "column name" TO "new name"`
 ```mySQL
 ALTER TABLE employees
 RENAME COLUMN phone_number TO enail;
+```
+To modify column we need to write `ALTER TABLE "table name" and then MODIFY COLUMN "column name" data type`
+```mySQL
+ALTER TABLE employees
+MODIFY COLUMN email VARCHAR(100);
+```
+To move the column position we need to write `ALTER TABLE "table name" and then MODIFY "column name" data type and finally AFTER "column name"`
+```mySQL
+ALTER TABLE employees
+MODIFY email VARCHAR(100)
+AFTER last_name;
 ```
