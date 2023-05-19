@@ -8,6 +8,7 @@
 * [Select table](#select-table)
 * [Rename table](#rename-table)
 * [Alter table](#alter-table)
+* [Insert row](#insert-row)
 
 ## Create Database
  `CREATE DATABASE "databaseName";`
@@ -34,7 +35,7 @@ CREATE TABLE employees(
   hourly_pay DECIMAL(5,2),
   hire_date DATE
 )
-//Here "hourly_pay DECIMAL(5,2)" 5 is the number of decimal digits and 2 is the fraction of the decimal digit
+//Here "hourly_pay DECIMAL(5,2)" 5,2 is the number of decimal digits with 2 decimal point.  for example - 123.23
 ```
 ## Select table
 `SELECT * FROM "tableName";`
@@ -75,4 +76,21 @@ ALTER TABLE employees
 MODIFY email VARCHAR(100)
 FIRST;
 ```
-
+# Insert row
+To insert row we need to add values sequencially one after another following the data types
+```mySQL
+INSERT INTO employees
+VALUES(1,"Md. Ariful","Haque","arif@sebpo.com",400.00,"2020-03-04");
+```
+To insert multiple row
+```mySQL
+INSERT INTO employees
+VALUES(1,"Md. Ariful","Haque","arif@sebpo.com",400.00,"2020-03-04"),
+      (2,"Md. Abir","Hossain","abir@sebpo.com",400.00,"2020-03-04"),
+      (3,"Md. Abdur","Rahman","abdur@sebpo.com",400.00,"2020-03-04") ;
+```
+To insert 1 or 2 data we need to specify the column name within first bracket after table name
+```mySQL
+INSERT INTO employees (employee_id,first_name,last_name)
+VALUES(5,"Md. Sabbir","Hossain");
+```
