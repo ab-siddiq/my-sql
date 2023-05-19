@@ -2,7 +2,7 @@
 * [Create database](#create-database)
 * [Make database default](#make-database-default)
 * [Drop database](#drop-database)
-* [Make database read only](#read-only)
+* [Make database read only](#make-database-read-only)
 * [Create table](#create-table)
 
 ## Create Database
