@@ -2,7 +2,7 @@
 * [Create a Database](#create-database)
 * [Make Database Default](#default-database)
 * [Drop a Database](#drop-database)
-* [Create a Table](#create-table)
+* [Create a table](#create-table)
 * [](#)
 * [](#)
 * [](#)
@@ -24,7 +24,7 @@
 NOTE: id the mode is readonly we can not drop the database. In order to drop the database we need to change the readonly mode by
 ALTER DATABASE "databaseName" READ ONLY = 0;
 
-## Create a Table
+## Create a table
 Example  `CREATE TABLE "tableName" (column name comma separeted)`
 ```mySQL
 CREATE TABLE employees(
