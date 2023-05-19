@@ -36,6 +36,6 @@ CREATE TABLE employees(
 ```
 ## Select table
 `SELECT * FROM "tableName";`
-[Go Top](#my-sql)
+* [Go Top](#my-sql)
 ## Rename table
 `RENAME TABLE "name of the table" TO "new name of the table";
