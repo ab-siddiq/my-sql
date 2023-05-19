@@ -9,7 +9,7 @@
 * [](#)
 * [](#)
 * [](#)
-## Create a database 
+## Create a Database 
  `CREATE DATABASE "databaseName";`
 
 ## Make Database Default
@@ -24,7 +24,7 @@
 NOTE: id the mode is readonly we can not drop the database. In order to drop the database we need to change the readonly mode by
 ALTER DATABASE "databaseName" READ ONLY = 0;
 
-## Create a table
+## Create a Table
 Example  `CREATE TABLE "tableName" (column name comma separeted)`
 ```mySQL
 CREATE TABLE employees(
