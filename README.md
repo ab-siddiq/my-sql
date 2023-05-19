@@ -137,3 +137,5 @@ To insert 1 or 2 data we need to specify the column name within first bracket af
 INSERT INTO employees (employee_id,first_name,last_name)
 VALUES(5,"Md. Sabbir","Hossain");
 ```
+
+[Source of learning](https://www.youtube.com/watch?v=5OdVJbNCSso&ab_channel=BroCode)
