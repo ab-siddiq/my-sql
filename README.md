@@ -4,6 +4,8 @@
 * [Drop database](#drop-database)
 * [Make database read only](#make-database-read-only)
 * [Create table](#create-table)
+* [Select table](#select-table)
+* [Rename table](#rename-table)
 
 ## Create Database
  `CREATE DATABASE "databaseName";`
@@ -30,4 +32,10 @@ CREATE TABLE employees(
   hourly_pay DECIMAL(5,2),
   hire_date DATE
 )
+//Here "hourly_pay DECIMAL(5,2)" 5 is the number of decimal digits and 2 is the fraction of the decimal digit
 ```
+## Select table
+`SELECT * FROM "tableName";`
+
+## Rename table
+`RENAME TABLE "name of the table" TO "new name of the table";
