@@ -7,7 +7,7 @@
 * [Create table](#create-table)
 * [Select table](#select-table)
 * [Rename table](#rename-table)
-* [Add new column](#add-column)
+* [Alter table](#alter-table)
 
 ## Create Database
  `CREATE DATABASE "databaseName";`
@@ -42,9 +42,14 @@ CREATE TABLE employees(
 [Go Top](#my-sql)
 ## Rename table
 `RENAME TABLE "name of the table" TO "new name of the table";
-## Add new column
+## Alter table
 To add new column we need to write `ALTER TABLE "table name" and then ADD "column name and its data type"
 ```mySQL
 ALTER TABLE employees
 ADD phone_number VARCHAR(15);
+```
+To rename column we need to write `ALTER TABLE "table name" and then RENAME COLUMN "column name" TO "new name"
+```mySQL
+ALTER TABLE employees
+RENAME COLUMN phone_number TO enail;
 ```
