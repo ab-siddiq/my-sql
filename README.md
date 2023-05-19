@@ -1,5 +1,6 @@
 # Table of contents
 [Create a Database](create-database)
+[Create a Table](create-table)
 ## Create a database 
  `CREATE DATABASE "databaseName";`
 
