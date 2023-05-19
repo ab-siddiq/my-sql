@@ -1,15 +1,6 @@
 # Table of contents
-* [Create a Database](#create-database)
-* [Make Database Default](#default-database)
-* [Drop a Database](#drop-database)
 * [Create a table](#create-table)
-* [](#)
-* [](#)
-* [](#)
-* [](#)
-* [](#)
-* [](#)
-## Create a Database 
+## Create a Database
  `CREATE DATABASE "databaseName";`
 
 ## Make Database Default
