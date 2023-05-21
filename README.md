@@ -18,6 +18,7 @@
 * [Unique](#unique)
 * [Not null](#not-null)
 * [Check](#check)
+* [Default](#default)
 
 
 ## Create Database
@@ -294,6 +295,22 @@ ALTER TABLE employees
 DROP CHECK check_salary;
 ```
 [Jump To Top &#8593;](#mysql)<br>
+# Defualt
+To set default value in a new table
+```mySQL
+CREATE TABLE employees(
+  employee_id INT,
+  first_name VARCHAR(50),
+  last_name VARCHAR(50),
+  salary DECIMAL(8,2) DEFAULT 0,
+  hire_date DATE,
+)
+```
+To set default value in an existing table
+```mySQL
+ALTER TABLE employee
+ALTER salary SET DEFAULT 0;
+```
 [Jump To Top &#8593;](#mysql)<br>
 [Jump To Top &#8593;](#mysql)<br>
 [Jump To Top &#8593;](#mysql)<br>
