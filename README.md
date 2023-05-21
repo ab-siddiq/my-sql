@@ -230,5 +230,5 @@ ALTER TABLE products
 ADD CONSTRAINT
 UNIQUE(product_id);
 ```
-[Top](#top)
+[Top](#top)<br>
 [Source of learning](https://www.youtube.com/watch?v=5OdVJbNCSso&ab_channel=BroCode)
