@@ -17,6 +17,7 @@
 * [Current date, time](#current-date-time)
 * [Unique](#unique)
 * [Not null](#not-null)
+* [Check](#check)
 
 
 ## Create Database
@@ -257,6 +258,41 @@ ALTER TABLE products
 MODIFY product_name varchar(20) NOT NULL;
 ```
 [Jump To Top &#8593;](#mysql)<br>
+# Check
+```mySQL
+CREATE TABLE employees(
+  employee_id INT,
+  first_name VARCHAR(50),
+  last_name VARCHAR(50),
+  salary DECIMAL(8,2),
+  hire_date DATE,
+  CHECK(salary=>15000)
+)
+
+or
+CREATE TABLE employees(
+  employee_id INT,
+  first_name VARCHAR(50),
+  last_name VARCHAR(50),
+  salary DECIMAL(8,2),
+  hire_date DATE,
+  CONTRAINT check_salary CHECK(salary=>15000)
+)
+```
+Add checck to existing table
+```mySQL
+ALTER TABLE employees
+ADD CHECK(salary>=15000);
+
+or
+ALTER TABLE employees
+ADD CONSTRAINT check_salary CHECK(salary>=15000);
+```
+Delete check
+```mySQL
+ALTER TABLE employees
+DROP CHECK check_salary;
+```
 [Jump To Top &#8593;](#mysql)<br>
 [Jump To Top &#8593;](#mysql)<br>
 [Jump To Top &#8593;](#mysql)<br>
