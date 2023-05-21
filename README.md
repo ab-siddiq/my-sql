@@ -9,6 +9,7 @@
 * [Select table](#select-table)
 * [Rename table](#rename-table)
 * [Alter table](#alter-table)
+* [Update table](#update-table)
 
 
 ## Create Database
@@ -138,5 +139,22 @@ ALTER TABLE employees
 MODIFY email VARCHAR(100)
 FIRST;
 ```
-
+## Update table
+To update table we can update one or more elements. If want to update more than one element than need to write using comma. And also need specify which one we want to update.
+```mySQL
+UPDATE employees
+SET joining_date="2023-05-12",email="ayan@sebpo.com",salary=25000.00
+WHERE employee_id=5;
+```
+If we want to set the value to null than just need to set the value equals null
+```mySQL
+UPDATE employees
+SET joining_date=NULL
+WHERE employee_id=5;
+```
+To update all of the row we need to skip the `WHERE` clouse. All of the column of  `joining_date` will be updated by the following query.
+```mySQL
+UPDATE employees
+SET joining_date="2023-05-12";
+```
 [Source of learning](https://www.youtube.com/watch?v=5OdVJbNCSso&ab_channel=BroCode)
