@@ -10,6 +10,7 @@
 * [Rename table](#rename-table)
 * [Alter table](#alter-table)
 * [Update table](#update-table)
+* [Delete table](#delete-table)
 
 
 ## Create Database
@@ -140,6 +141,7 @@ MODIFY email VARCHAR(100)
 FIRST;
 ```
 ## Update table
+`UPDATE` "table name";
 To update table we can update one or more elements. If want to update more than one element than need to write using comma. And also need specify which one we want to update.
 ```mySQL
 UPDATE employees
@@ -156,5 +158,16 @@ To update all of the row we need to skip the `WHERE` clouse. All of the column o
 ```mySQL
 UPDATE employees
 SET joining_date="2023-05-12";
+```
+## Delete table 
+`DELETE FROM` "table name";
+If we want to delete the whole table row we need to just write the following query and it will delete everything from the table.
+```mySQL
+DELETE FROM employees;
+```
+To avoid deleting everything we need to follow the below query. It will delete only the row which is sepecified under the `WHERE` clouse
+```mySQL
+DELETE FROM employees
+WHERE employee_id=5;
 ```
 [Source of learning](https://www.youtube.com/watch?v=5OdVJbNCSso&ab_channel=BroCode)
