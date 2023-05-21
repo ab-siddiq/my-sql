@@ -1,4 +1,5 @@
 # MYSQL
+# Top
 # Table of contents
 * [Create database](#create-database)
 * [Make database default](#make-database-default)
@@ -16,6 +17,7 @@
 * [Roll back](#roll-back)
 * [Current date, time](#current-date-time)
 * [Unique](#unique)
+* [Not null](#not-null)
 
 
 ## Create Database
@@ -227,5 +229,6 @@ In case if you forgot to set `UNIQUE` identifier you can set it later by the fol
 ALTER TABLE products
 ADD CONSTRAINT
 UNIQUE(product_id);
-`
+```
+[Top](#top)
 [Source of learning](https://www.youtube.com/watch?v=5OdVJbNCSso&ab_channel=BroCode)
