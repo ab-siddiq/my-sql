@@ -14,6 +14,7 @@
 * [Auto commit](#auto-commit)
 * [Commit](#commit)
 * [Roll back](#roll-back)
+* [Current date, time](#current-date-time)
 
 
 ## Create Database
@@ -187,5 +188,29 @@ COMMIT;
 When we create a safe mode and delete all the row from table by mistake we can restore them by `ROLLABACK` clouse
 ```mySQL
 ROLLBACK;
+```
+## Current date, time
+For current date the data type is `DATE`, current time datat type is `TIME`, current date time data type is `DATETIME`
+```mySQL
+CREATE TABLE date_time(
+c_date DATE,
+c_time TIME,
+current_date_time DATETIME
+);
+```
+To insert current date, date or date time we have `CURRENT_DATE()`, `CURRENT_TIME()`, `NOW()` function
+```mySQL
+INSERT INTO date_time
+VALUES (CURRENT_DATE(),CURRENT_TIME(),NOW());
+```
+We can add also the previous or the next date or time by adding decimal values
+```mySQL
+INSERT INTO date_time
+VALUES (CURRENT_DATE()-1,CURRENT_TIME(),NOW());
+```
+If we want to add NULL value we just put null
+```mySQL
+INSERT INTO date_time
+VALUES (null,NULL,NULL);
 ```
 [Source of learning](https://www.youtube.com/watch?v=5OdVJbNCSso&ab_channel=BroCode)
