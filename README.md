@@ -11,6 +11,9 @@
 * [Alter table](#alter-table)
 * [Update table](#update-table)
 * [Delete table](#delete-table)
+* [Auto commit](#auto-commit)
+* [Commit](#commit)
+* [Roll back](#roll-back)
 
 
 ## Create Database
@@ -169,5 +172,20 @@ To avoid deleting everything we need to follow the below query. It will delete o
 ```mySQL
 DELETE FROM employees
 WHERE employee_id=5;
+```
+## Auto commit
+Suppose we are going to delete one row from our table and by mistake we forgot to add the `WHERE` clouse. Then what happen? All the row from the table table will vanish. To get rid from this situation we need to create a safe mode by adding the below query
+```mySQL
+AUTO COMMIT = OFF;
+```
+## Commit
+When we create a safe mode by adding `AUTO COMMIT = OFF` then we need to manually commit by `COMMIT` clouse
+```mySQL
+COMMIT;
+```
+## Roll back
+When we create a safe mode and delete all the row from table by mistake we can restore them by `ROLLABACK` clouse
+```mySQL
+ROLLBACK;
 ```
 [Source of learning](https://www.youtube.com/watch?v=5OdVJbNCSso&ab_channel=BroCode)
