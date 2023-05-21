@@ -15,6 +15,7 @@
 * [Commit](#commit)
 * [Roll back](#roll-back)
 * [Current date, time](#current-date-time)
+* [Unique](#unique)
 
 
 ## Create Database
@@ -213,4 +214,18 @@ If we want to add NULL value we just put null
 INSERT INTO date_time
 VALUES (null,NULL,NULL);
 ```
+# Unique
+```MYsql
+CREATE TABLE products(
+product_id INT,
+product_name VARCHAR(50) UNIQUE,
+product_price DECIMAL(10,2)
+)
+```
+In case if you forgot to set `UNIQUE` identifier you can set it later by the following query
+```mySQL
+ALTER TABLE products
+ADD CONSTRAINT
+UNIQUE(product_id);
+`
 [Source of learning](https://www.youtube.com/watch?v=5OdVJbNCSso&ab_channel=BroCode)
