@@ -242,5 +242,29 @@ ADD CONSTRAINT
 UNIQUE(product_id);
 ```
 [Jump To Top](#mysql)<br>
+# Not null
+When creating a table you can set a specific column that value must be filled by the following query
+```mySQL
+CREATE TABLE products(
+product_id INT,
+product_name VARCHAR(50) NOT NULL,
+product_price DECIMAL(10,2)
+);
+```
+If you forgot to set no null you can add that later by following the below
+```mySQL
+ALTER TABLE products
+MODIFY product_name varchar(20) NOT NULL;
+```
+[Jump To Top](#mysql)<br>
+[Jump To Top](#mysql)<br>
+[Jump To Top](#mysql)<br>
+[Jump To Top](#mysql)<br>
+[Jump To Top](#mysql)<br>
+[Jump To Top](#mysql)<br>
+[Jump To Top](#mysql)<br>
+[Jump To Top](#mysql)<br>
+[Jump To Top](#mysql)<br>
+[Jump To Top](#mysql)<br>
 [Source of learning](https://www.youtube.com/watch?v=5OdVJbNCSso&ab_channel=BroCode)
 
