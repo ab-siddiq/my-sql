@@ -1,5 +1,4 @@
 # MYSQL
-# Top
 # Table of contents
 * [Create database](#create-database)
 * [Make database default](#make-database-default)
@@ -25,16 +24,19 @@
 ```mySQL
 CREATE DATABASE employees;
 ```
+[Jump To Top](#mysql)<br>
 ## Make database default
 `USE "databaseName";`
 ```mySQL
 USE employees;
 ```
+[Jump To Top](#mysql)<br>
 ## Drop database
 `DROP DATABASE "databaseName";`
 ```mySQL
 DROP DATABASE employees;
 ```
+[Jump To Top](#mysql)<br>
 ## Make database read only
 `ALTER DATABASE "databaseName" READ ONLY = 1;`
 ```mySQL
@@ -45,6 +47,7 @@ NOTE: id the mode is readonly we can not drop the database. In order to drop the
 ```mySQL
 ALTER DATABASE employees READ ONLY = 0;
 ```
+[Jump To Top](#mysql)<br>
 ## Create table
 Example  `CREATE TABLE "tableName" (column name comma separeted)`
 ```mySQL
@@ -57,6 +60,7 @@ CREATE TABLE employees(
 )
 //Here "hourly_pay DECIMAL(5,2)" 5,2 is the number of decimal digits with 2 decimal point.  for example - 123.23
 ```
+[Jump To Top](#mysql)<br>
 # Insert row
 To insert row we need to add values sequencially one after another following the data types
 ```mySQL
@@ -75,6 +79,7 @@ To insert 1 or 2 data we need to specify the column name within first bracket af
 INSERT INTO employees (employee_id,first_name,last_name)
 VALUES(5,"Md. Sabbir","Hossain");
 ```
+[Jump To Top](#mysql)<br>
 ## Select table
 To get all the column
 `SELECT * FROM "tableName";`
@@ -107,13 +112,13 @@ WHERE hourly_pay IS NULL;
 SELECT * FROM employees
 WHERE hourly_pay IS NOT NULL;
 ```
-<br><br>
-[Go Top](#my-sql)
+[Jump To Top](#mysql)<br>
 ## Rename table
 `RENAME TABLE "name of the table" TO "new name of the table";`
 ```mySQL
 RENAME TABLE employees TO workers;
 ```
+[Jump To Top](#mysql)<br>
 ## Alter table
 To add new column 
 ```mySQL
@@ -147,6 +152,7 @@ ALTER TABLE employees
 MODIFY email VARCHAR(100)
 FIRST;
 ```
+[Jump To Top](#mysql)<br>
 ## Update table
 `UPDATE` "table name";
 To update table we can update one or more elements. If want to update more than one element than need to write using comma. And also need specify which one we want to update.
@@ -166,6 +172,7 @@ To update all of the row we need to skip the `WHERE` clouse. All of the column o
 UPDATE employees
 SET joining_date="2023-05-12";
 ```
+[Jump To Top](#mysql)<br>
 ## Delete table 
 `DELETE FROM` "table name";
 If we want to delete the whole table row we need to just write the following query and it will delete everything from the table.
@@ -177,16 +184,19 @@ To avoid deleting everything we need to follow the below query. It will delete o
 DELETE FROM employees
 WHERE employee_id=5;
 ```
+[Jump To Top](#mysql)<br>
 ## Auto commit
 Suppose we are going to delete one row from our table and by mistake we forgot to add the `WHERE` clouse. Then what happen? All the row from the table table will vanish. To get rid from this situation we need to create a safe mode by adding the below query
 ```mySQL
 AUTO COMMIT = OFF;
 ```
+[Jump To Top](#mysql)<br>
 ## Commit
 When we create a safe mode by adding `AUTO COMMIT = OFF` then we need to manually commit by `COMMIT` clouse
 ```mySQL
 COMMIT;
 ```
+[Jump To Top](#mysql)<br>
 ## Roll back
 When we create a safe mode and delete all the row from table by mistake we can restore them by `ROLLABACK` clouse
 ```mySQL
@@ -216,6 +226,7 @@ If we want to add NULL value we just put null
 INSERT INTO date_time
 VALUES (null,NULL,NULL);
 ```
+[Jump To Top](#mysql)<br>
 # Unique
 ```MYsql
 CREATE TABLE products(
@@ -230,5 +241,6 @@ ALTER TABLE products
 ADD CONSTRAINT
 UNIQUE(product_id);
 ```
-[Top](#mysql)<br>
+[Jump To Top](#mysql)<br>
 [Source of learning](https://www.youtube.com/watch?v=5OdVJbNCSso&ab_channel=BroCode)
+
