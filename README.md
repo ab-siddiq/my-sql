@@ -295,7 +295,7 @@ ALTER TABLE employees
 DROP CHECK check_salary;
 ```
 [Jump To Top &#8593;](#mysql)<br>
-# Defualt
+# Default
 To set default value in a new table
 ```mySQL
 CREATE TABLE employees(
