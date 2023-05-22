@@ -19,6 +19,7 @@
 * [Not null](#not-null)
 * [Check](#check)
 * [Default](#default)
+* [Primary key](#primary-key)
 
 
 ## Create Database
@@ -294,7 +295,7 @@ Delete check
 ALTER TABLE employees
 DROP CHECK check_salary;
 ```
-[Jump To Top &#8593;](#mysql)<br>
+[Back To Top &#8593;](#mysql)<br>
 # Default
 To set default value in a new table
 ```mySQL
@@ -311,13 +312,27 @@ To set default value in an existing table
 ALTER TABLE employee
 ALTER salary SET DEFAULT 0;
 ```
-[Jump To Top &#8593;](#mysql)<br>
-[Jump To Top &#8593;](#mysql)<br>
-[Jump To Top &#8593;](#mysql)<br>
-[Jump To Top &#8593;](#mysql)<br>
-[Jump To Top &#8593;](#mysql)<br>
-[Jump To Top &#8593;](#mysql)<br>
-[Jump To Top &#8593;](#mysql)<br>
-[Jump To Top &#8593;](#mysql)<br>
+[Back To Top &#8593;](#mysql)<br>
+## Primary key
+A table can have one and only one primary key, can not be null and it should be unique.
+```mySQL
+CREATE TABLE transactions(
+	transaction_id INT PRIMARY KEY,
+    amount DECIMAL (8,2) DEFAULT 0.00
+);
+```
+To add `Primary Key` in already existing table need 
+```mySQL
+ALTER TABLE transactions
+ADD CONSTRAINT
+PRIMARY KEY(transaction_id);
+```
+[Back To Top &#8593;](#mysql)<br>
+[Back To Top &#8593;](#mysql)<br>
+[Back To Top &#8593;](#mysql)<br>
+[Back To Top &#8593;](#mysql)<br>
+[Back To Top &#8593;](#mysql)<br>
+[Back To Top &#8593;](#mysql)<br>
+[Back To Top &#8593;](#mysql)<br>
 [Source of learning](https://www.youtube.com/watch?v=5OdVJbNCSso&ab_channel=BroCode)
 
