@@ -20,6 +20,7 @@
 * [Check](#check)
 * [Default](#default)
 * [Primary key](#primary-key)
+* [Auto increment](#auto-increment)
 
 
 ## Create Database
@@ -328,6 +329,19 @@ ADD CONSTRAINT
 PRIMARY KEY(transaction_id);
 ```
 [Back To Top &#8593;](#mysql)<br>
+# Auto increment
+```mySQL
+CREATE TABLE transactions(
+	transaction_id INT PRIMARY KEY AUTO_INCREMENT,
+    item VARCHAR(100),
+    price DECIMAL(8,2) DEFAULT 0
+    );
+```
+To set defualt value for auto increment
+```mySQL
+ALTER TABLE transactions
+AUTO_INCREMENT = 1000
+```
 [Back To Top &#8593;](#mysql)<br>
 [Back To Top &#8593;](#mysql)<br>
 [Back To Top &#8593;](#mysql)<br>
