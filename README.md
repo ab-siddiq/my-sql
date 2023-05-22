@@ -194,7 +194,7 @@ SET AUTOCOMMIT = OFF;
 ```
 [Jump To Top &#8593;](#mysql)<br>
 ## Commit
-When we create a safe mode by adding `AUTO COMMIT = OFF` then we need to manually commit by `COMMIT` clouse. After `AUTO COMMIT = OFF` we must run the query `COMMIt` `otherwise it will not restore the table data`.
+When we create a safe mode by adding `AUTO COMMIT = OFF` then we need to manually commit by `COMMIT` clouse. After `AUTO COMMIT = OFF`<br> Note: we must run the query `COMMIt` `otherwise it will not restore the table data`.
 ```mySQL
 COMMIT;
 ```
