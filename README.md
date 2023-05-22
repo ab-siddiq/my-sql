@@ -190,7 +190,7 @@ WHERE employee_id=5;
 ## Auto commit
 Suppose we are going to delete one row from our table and by mistake we forgot to add the `WHERE` clouse. Then what happen? All the row from the table table will vanish. To get rid from this situation we need to create a safe mode by adding the below query
 ```mySQL
-AUTO COMMIT = OFF;
+SET AUTOCOMMIT = OFF;
 ```
 [Jump To Top &#8593;](#mysql)<br>
 ## Commit
