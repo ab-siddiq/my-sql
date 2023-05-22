@@ -332,10 +332,10 @@ PRIMARY KEY(transaction_id);
 # Auto increment
 ```mySQL
 CREATE TABLE transactions(
-	transaction_id INT PRIMARY KEY AUTO_INCREMENT,
+    transaction_id INT PRIMARY KEY AUTO_INCREMENT,
     item VARCHAR(100),
     price DECIMAL(8,2) DEFAULT 0
-    );
+);
 ```
 To set defualt value for auto increment
 ```mySQL
