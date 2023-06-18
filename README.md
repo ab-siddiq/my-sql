@@ -2,6 +2,7 @@
 # Table of contents
 * [Database](#database)
 * [Types of database](#types-of-database)
+* [Relation of database](#relation)
 * [Create database](#create-database)
 * [Make database default](#make-database-default)
 * [Drop database](#drop-database)
@@ -42,6 +43,11 @@
 - Composite primary key ( a key that is generated using more than one key)
 - Foreign key ( if a primary key of a table is used in another table is a foreign key)
   
+[Back To Top &#8593;](#mysql)<br>
+## Relation
+- One to one
+- One to many
+- Many to one
 [Back To Top &#8593;](#mysql)<br>
 ## Create Database
 `CREATE DATABASE "databaseName";`
