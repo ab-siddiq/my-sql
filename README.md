@@ -35,11 +35,13 @@
 ## Types of database
 - Relational database
 - Non-relational database
-[Back To Top &#8593;](#mysql)<be>
+  
+[Back To Top &#8593;](#mysql)<br>
 ## Key
 - Primary key (Unique key across the table)
-- Composite primary key ( a key which is generated using more than one key)
+- Composite primary key ( a key that is generated using more than one key)
 - Foreign key ( if a primary key of a table is used in another table is a foreign key)
+  
 [Back To Top &#8593;](#mysql)<br>
 ## Create Database
 `CREATE DATABASE "databaseName";`
