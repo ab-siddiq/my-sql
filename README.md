@@ -32,7 +32,7 @@
 ## Types of database
 - Relational database
 - Non-relational database
-## Create a Database
+## Create Database
 `CREATE DATABASE "databaseName";`
 ```mySQL
 CREATE DATABASE employees;
