@@ -1,5 +1,7 @@
 # MYSQL
 # Table of contents
+* [Database](#database)
+* [Types of database](#type)
 * [Create database](#create-database)
 * [Make database default](#make-database-default)
 * [Drop database](#drop-database)
@@ -22,8 +24,12 @@
 * [Primary key](#primary-key)
 * [Auto increment](#auto-increment)
 
-
-## Create Database
+# Database
+- A set of information that is organized and computerized/electronic
+# Type of database
+- Relational database
+- Non relational database
+## Create a Database
 `CREATE DATABASE "databaseName";`
 ```mySQL
 CREATE DATABASE employees;
