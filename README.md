@@ -24,11 +24,14 @@
 * [Primary key](#primary-key)
 * [Auto increment](#auto-increment)
 
-# Database
+## Database
 - A set of information that is organized and computerized/electronic
-# Type of database
+* Field
+* Record
+* Values (data)
+## Types of database
 - Relational database
-- Non relational database
+- Non-relational database
 ## Create a Database
 `CREATE DATABASE "databaseName";`
 ```mySQL
