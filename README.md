@@ -1,7 +1,7 @@
 # MYSQL
 # Table of contents
 * [Database](#database)
-* [Types of database](#type)
+* [Types of database](#types-of-database)
 * [Create database](#create-database)
 * [Make database default](#make-database-default)
 * [Drop database](#drop-database)
