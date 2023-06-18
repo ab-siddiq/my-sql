@@ -31,10 +31,16 @@
 * Values (data)
   
 ![image](https://github.com/ab-siddiq/my-sql/assets/24230435/8c3feb98-50ff-4d2a-ab21-c0084fb1756c)
-
+[Back To Top &#8593;](#mysql)<br>
 ## Types of database
 - Relational database
 - Non-relational database
+[Back To Top &#8593;](#mysql)<be>
+## Key
+- Primary key (Unique key across the table)
+- Composite primary key ( a key which is generated using more than one key)
+- Foreign key ( if a primary key of a table is used in another table is a foreign key)
+[Back To Top &#8593;](#mysql)<br>
 ## Create Database
 `CREATE DATABASE "databaseName";`
 ```mySQL
