@@ -29,6 +29,9 @@
 * Field
 * Record
 * Values (data)
+  
+![image](https://github.com/ab-siddiq/my-sql/assets/24230435/8c3feb98-50ff-4d2a-ab21-c0084fb1756c)
+
 ## Types of database
 - Relational database
 - Non-relational database
