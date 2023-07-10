@@ -58,7 +58,17 @@
   - Derived
    
 - Relationship
-
+### Connectivity
+Ex-Student and Result table
+### Cardinality
+- One-to-one => 1: 1
+- One to many => 1:M
+- Many to many => M:N
+Ex- Student teacher relation
+[Back To Top &#8593;](#mysql)<br>
+# Database design
+Top-down => Model to Data
+Bottom-up => Data to Model
 [Back To Top &#8593;](#mysql)<br>
 ## Create Database
 `CREATE DATABASE "databaseName";`
